@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionObject Path="NVD3OhlcChart" 
+                 Label="NV D3 OHLC Chart" 
+				 Description="D3 OHLC/Candlestick Chart Example" 
+ 				 PageWidth="5"
+				 PageHeight="2000"
+				 Type="Object" >
+	<Dimension Label="Date" Initial="" TargetName="Date" />
+	<Measurement Label="open" Initial="" TargetName="open" />
+	<Measurement Label="high" Initial="" TargetName="high" />
+	<Measurement Label="low" Initial="" TargetName="low" />
+	<Measurement Label="close" Initial="" TargetName="close" />
+    <Text Label="Candlestick" Type="checkbox" Expression="0" />
+	<Initiate Name="Caption.Text" value="NV D3 OHLC Chart" />
+    <Initiate Name="Chart.Dimension.0.Field" Value="Date" />
+    <Initiate Name="Chart.Expression.0.0.Definition" Value="=Avg(open)" />
+    <Initiate Name="Chart.Expression.1.0.Definition" Value="=Avg(high)" />
+    <Initiate Name="Chart.Expression.2.0.Definition" Value="=Avg(low)" />
+    <Initiate Name="Chart.Expression.3.0.Definition" Value="=Avg(close)" />
+</ExtensionObject>
