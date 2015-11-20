@@ -6,15 +6,15 @@
 				 PageHeight="2000"
 				 Type="Object" >
 	<Dimension Label="Date" Initial="" TargetName="Date" />
-	<Measurement Label="open" Initial="" TargetName="open" />
-	<Measurement Label="high" Initial="" TargetName="high" />
-	<Measurement Label="low" Initial="" TargetName="low" />
-	<Measurement Label="close" Initial="" TargetName="close" />
+	<Measurement Label="Open" Initial="" TargetName="Open" />
+	<Measurement Label="High" Initial="" TargetName="High" />
+	<Measurement Label="Low" Initial="" TargetName="Low" />
+	<Measurement Label="Close" Initial="" TargetName="Close" />
     <Text Label="Candlestick" Type="checkbox" Expression="0" />
 	<Initiate Name="Caption.Text" value="NV D3 OHLC Chart" />
-    <Initiate Name="Chart.Dimension.0.Field" Value="Date" />
-    <Initiate Name="Chart.Expression.0.0.Definition" Value="=Avg(open)" />
-    <Initiate Name="Chart.Expression.1.0.Definition" Value="=Avg(high)" />
-    <Initiate Name="Chart.Expression.2.0.Definition" Value="=Avg(low)" />
-    <Initiate Name="Chart.Expression.3.0.Definition" Value="=Avg(close)" />
+    <Initiate Name="Chart.Dimension.0.Field" Value="=Num(Date)" />
+    <Initiate Name="Chart.Expression.0.0.Definition" Value="=Avg(Open)" />
+    <Initiate Name="Chart.Expression.1.0.Definition" Value="=Avg(High)" />
+    <Initiate Name="Chart.Expression.2.0.Definition" Value="=Avg(Low)" />
+    <Initiate Name="Chart.Expression.3.0.Definition" Value="=Avg(Close)" />
 </ExtensionObject>
